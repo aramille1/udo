@@ -1,5 +1,5 @@
 <div class="container new_form">
-<h1>Create Profile</h1>
+<h1>Edit Profile</h1>
 
 <%= simple_form_for(@profile) do |f| %>
   <%= f.input :date_of_birth%>
@@ -10,6 +10,6 @@
   <%= f.input :vaccinations %>
   <%= f.input :blood_type %>
   <%= f.input :race %>
-  <%= f.button :submit, "Submit" ,class:"btn btn-dark" %>
+  <%= f.button :submit, "Edit" ,class:"btn btn-dark" %>
 <% end %>
 </div>
