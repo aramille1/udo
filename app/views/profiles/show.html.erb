@@ -1,0 +1,12 @@
+<h1>show profile</h1>
+
+  <p>date of birth: <%= @profile.date_of_birth %></p>
+  <p>gender: <%= @profile.gender %></p>
+  <p>allergies: <%= @profile.allergies %></p>
+  <p>dosage: <%= @profile.dosage %></p>
+  <p>times_per_day: <%= @profile.times_per_day %></p>
+  <p>vaccinations: <%= @profile.vaccinations %></p>
+  <p>blood_type: <%= @profile.blood_type %></p>
+  <p>race: <%= @profile.race %></p>
+
+  <%= link_to "Edit", profiles_edit_path, class: "dropdown-item" %>
