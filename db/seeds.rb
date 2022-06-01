@@ -120,9 +120,6 @@ record_symptom3.record_id = record3.id
 record_symptom3.symptom_id = symptom3.id
 
 
-
-
-p profile1
 profile1.save!
 profile2.save!
 profile3.save!

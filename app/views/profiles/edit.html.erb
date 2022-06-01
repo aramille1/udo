@@ -2,6 +2,7 @@
 <h1>Edit Profile</h1>
 
 <%= simple_form_for(@profile) do |f| %>
+  <%= f.input :gender%>
   <%= f.input :date_of_birth%>
   <%= f.input :allergies %>
   <%= f.input :medication %>
@@ -10,6 +11,6 @@
   <%= f.input :vaccinations %>
   <%= f.input :blood_type %>
   <%= f.input :race %>
-  <%= f.button :submit, "Edit" ,class:"btn btn-dark" %>
+  <%= f.button :submit, "Submit" ,class:"btn btn-dark" %>
 <% end %>
 </div>
