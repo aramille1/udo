@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <% if !current_page?(dashboard_path) %>
+    <% if !current_page?(dashboard_path && root_path) %>
     <%= render 'shared/navbar' %>
     <% end %>
     <%= render 'shared/flashes' %>
