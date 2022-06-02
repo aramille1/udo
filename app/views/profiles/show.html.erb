@@ -1,6 +1,7 @@
-<h1>show profile</h1>
+<h1 class="text-center m-4">show profile</h1>
 
-  <p>date of birth: <%= @profile.date_of_birth %></p>
+  <div class="text-center">
+      <p>date of birth: <%= @profile.date_of_birth %></p>
   <p>gender: <%= @profile.gender %></p>
   <p>allergies: <%= @profile.allergies %></p>
   <p>dosage: <%= @profile.dosage %></p>
@@ -8,5 +9,8 @@
   <p>vaccinations: <%= @profile.vaccinations %></p>
   <p>blood_type: <%= @profile.blood_type %></p>
   <p>race: <%= @profile.race %></p>
-
-  <%= link_to "Edit", profiles_edit_path, class: "dropdown-item" %>
+  <%= link_to profiles_edit_path, class: "btn btn-primary btn-lg btn-color" do%>
+  <span>edit</span>
+  <i class="fa fa-pen" aria-hidden="true"></i>
+<% end %>
+  </div>
