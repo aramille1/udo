@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'dashboard', to: 'pages#dashboard'
 
-  resources :records, only: [:index, :new, :create]
+  resources :records
   resources :profiles, only: [:update]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

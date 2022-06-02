@@ -1,1 +1,7 @@
 <h1>All records here</h1>
+<% @records.each do |item| %>
+  <ul>
+    <li><%= link_to item.disease, record_path(item) %></li>
+    <li><%= item.date %></li>
+  </ul>
+<% end %>

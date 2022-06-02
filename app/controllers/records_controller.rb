@@ -1,4 +1,8 @@
 class RecordsController < ApplicationController
+  def index
+    @records = Record.all
+  end
+
   def new
     @record = Record.new
   end
@@ -25,6 +29,28 @@ class RecordsController < ApplicationController
     end
 
   end
+
+  def show
+    @record = Record.find(params[:id])
+  end
+
+  def edit
+    @record = Record.find(params[:id])
+  end
+
+  def update
+    @record = Record.find(params[:id])
+    @record.update(record_params)
+    redirect_to record_path(@record)
+  end
+
+
+  def destroy
+    @record = Record.find(params[:id])
+    @record.destroy
+    redirect_to records_path, status: :see_other
+  end
+
 
   private
 
