@@ -1,0 +1,16 @@
+<p>show</p>
+<ul>
+  <li><%= @record.disease %></li>
+  <li><%= @record.notes %></li>
+  <li><%= @record.medication %></li>
+  <li><%= @record.date %></li>
+      <strong>symptoms: </strong>
+  <% @record.symptoms.each do |symptom| %>
+    <ul>
+      <li><%= symptom.name %></li>
+    </ul>
+  <% end %>
+</ul>
+
+<%= link_to "edit", edit_record_path(@record) %>
+<%= link_to "Delete", record_path(@record), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
