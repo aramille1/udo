@@ -1,16 +1,44 @@
-<p>show</p>
-<ul>
-  <li><%= @record.disease %></li>
-  <li><%= @record.notes %></li>
-  <li><%= @record.medication %></li>
-  <li><%= @record.date %></li>
-      <strong>symptoms: </strong>
-  <% @record.symptoms.each do |symptom| %>
-    <ul>
-      <li><%= symptom.name %></li>
-    </ul>
-  <% end %>
-</ul>
+<h1 class="text-center m-4">Record</h1>
+<div class="wrapper">
+  <div class="record-card" style="width: 100%;">
+    <div class="card-body">
+      <div class="card-box">
+        <h5 class="card-title">Disease</h5>
+        <div><%= @record.disease %></div>
+      </div>
 
-<%= link_to "edit", edit_record_path(@record) %>
-<%= link_to "Delete", record_path(@record), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+      <div class="card-box">
+        <h5 class="card-title">Date</h5>
+        <div><%= @record.date %></div>
+      </div>
+
+      <div class="card-box">
+        <h5 class="card-title">Symptoms</h5>
+        <% @record.symptoms.each do |item| %>
+          <div class="symptoms"><%= item.name %></div>
+        <% end %>
+      </div>
+
+      <div class="card-box">
+        <h5 class="card-title">Medication</h5>
+        <div><%= @record.medication %></div>
+      </div>
+
+      <div class="card-box">
+        <h5 class="card-title">Notes</h5>
+        <div><%= @record.notes %></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btns">
+    <%= link_to '#', class: "btn btn-primary btn-lg btn-color" do%>
+    <span>share</span>
+    <i class="fa fa-share" aria-hidden="true"></i>
+  <% end %>
+  <%= link_to edit_record_path(@record), class: "btn btn-primary btn-lg btn-color" do%>
+  <span>edit</span>
+  <i class="fa fa-pen" aria-hidden="true"></i>
+<% end %>
+<%= link_to record_path(@record), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-primary btn-lg btn-color" do%><span>Delete</span>
+<i class="fa fa-trash" aria-hidden="true"></i><% end %></div></div>
