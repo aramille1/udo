@@ -8,7 +8,6 @@ class RecordsController < ApplicationController
   end
 
   def create
-
     @record = Record.new(record_params)
     @record.user = current_user
 
@@ -27,7 +26,6 @@ class RecordsController < ApplicationController
     else
       render :new
     end
-
   end
 
   def show
@@ -44,13 +42,11 @@ class RecordsController < ApplicationController
     redirect_to record_path(@record)
   end
 
-
   def destroy
     @record = Record.find(params[:id])
     @record.destroy
     redirect_to records_path, status: :see_other
   end
-
 
   private
 
