@@ -1,3 +1,47 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<p>This is where landing page and signin and signup will go!</p>
+  <div class="video-container">
+
+    <%= video_tag 'udo_health.mp4', autoplay: :autoplay, loop: :loop, muted: :muted, class: "video_tag" %>
+
+
+    <div class="text-landing">
+      <h1>Udo</h1>
+      <br>
+      <br>
+        <p>Transforming data into actionable solutions</p>
+      <br>
+      <br>
+        <div class="d-flex">
+        <a class="btn btn-ghost" href="#">Sign Up</a>
+        <a class="btn btn-ghost-2" href="#">Login</a>
+        </div>
+      </div>
+   </div>
+
+
+      <section id="subscribe-form" class="subscribe-form wf-section"></section>
+  <section id="feature-section" class="feature-section wf-section">
+    <div class="flex-container w-container">
+      <div class="feature-image-mask"> <%= image_tag "team-picture.jpg", class: "w-100" %> </div>
+      <div>
+        <h2>We are Udo</h2>
+        <p>We are an innovative global company, driven by one purpose: we build effective communication between healthcare professionals and patients.</p>
+      </div>
+    </div>
+  </section>
+
+
+    <div class="centered-container w-container">
+      <h2>Get in touch</h2>
+      <p>If you have any concerns about keeping accurate records, get in touch with us to see how we can support you</p>
+      <div class="w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" method="get" class="subscribe-form-flex">
+          <div class="subscribe-form-input-wrapper"><label for="Subscriber-Email" id="subscribe-email">Email</label><input type="email" class="subscribe-form-input w-input" maxlength="256" name="Subscriber-Email" data-name="Subscriber Email" placeholder="" id="Subscriber-Email" required=""></div><input type="submit" value="Submit" data-wait="Please wait..." class="w-button">
+        </form>
+        <%# <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div> %>
+      </div>
+    </div>
