@@ -35,20 +35,12 @@
 
 .btn-ghost {
   color: #ffffff;
-  border: 5px solid #ffffff;
+  border: 1px solid #ffffff;
   padding: 8px 24px;
   border-radius: 50px;
-  font-weight: lighter;
+  font-weight: normal;
   transition: opacity 0.3s ease;
-}
-
-.btn-ghost-2 {
-  color: #ffffff;
-  border: 5px solid #ffffff;
-  padding: 8px 24px;
-  border-radius: 50px;
-  font-weight: lighter;
-  transition: opacity 0.3s ease;
+  font-size: 30px;
 }
 
 .btn-ghost:hover {
@@ -326,4 +318,19 @@
   .subscribe-form-input {
     width: 100%;
   }
+}
+
+.home-h{
+  font-size: 60px;
+}
+
+.home-p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.d-flex-ghost{
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
 }
