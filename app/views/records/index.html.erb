@@ -5,7 +5,7 @@
       <div class="card-body">
         <%= link_to record_path(item) do %>
         <div class="record-disease"><%= item.disease %></div>
-        <div class="record-date"><%= item.date %></div>
+        <div class="record-date"><%= item.date.strftime("%B %d, %Y %a") %></div>
         <% end %>
       </div>
     </div>
