@@ -1,6 +1,7 @@
 <h1 class="text-center m-4">Create a record</h1>
 <div class="container new_form">
 
+ <input type="file" accept="image/*" capture="camera">
 <%= simple_form_for(@record) do |f| %>
   <%= f.input :disease%>
   <%= f.input :notes %>
@@ -15,4 +16,3 @@
   <%= f.button :submit, "Submit" ,class:"btn btn-dark" %>
 <% end %>
 </div>
- <input type="file" accept="image/*" capture="camera">
