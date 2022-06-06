@@ -1,21 +1,19 @@
-
 <div class="header">
   <%= link_to :back do%>
   <i class="fa fa-angle-left" style="color:black; padding:10px"></i>
 <% end %>
 <h1 class="text-center">Record</h1>
-</div>
-<div class="wrapper">
+<div class="wrapper" style="height: 130vh;">
   <div class="record-card" style="width: 100%;">
     <div class="card-body">
       <div class="card-box">
-        <h5 class="card-title">Disease</h5>
+        <h5 class="card-title">Sickness</h5>
         <div><%= @record.disease %></div>
       </div>
 
       <div class="card-box">
         <h5 class="card-title">Date</h5>
-        <div><%= @record.date %></div>
+        <div><%= @record.date.strftime("%B %d, %Y %a") %></div>
       </div>
 
       <div class="card-box">
@@ -34,17 +32,34 @@
         <h5 class="card-title">Notes</h5>
         <div><%= @record.notes %></div>
       </div>
+
+      <div class="card-box">
+        <h5 class="card-title">Image</h5>
+
+        <% if @record.photo.attached? %>
+          <div><%= cl_image_tag @record.photo.key, height: 300, width: 300, crop: :fill %></div>
+          <% else %>
+          <p>No image yet..</p>
+        <% end %>
+
+      </div>
     </div>
   </div>
 
   <div class="btns">
     <%= link_to '#', class: "btn btn-primary btn-lg btn-color" do%>
-    <span>share</span>
-    <i class="fa fa-share" aria-hidden="true"></i>
-  <% end %>
-  <%= link_to edit_record_path(@record), class: "btn btn-primary btn-lg btn-color" do%>
-  <span>edit</span>
-  <i class="fa fa-pen" aria-hidden="true"></i>
-<% end %>
-<%= link_to record_path(@record), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-primary btn-lg btn-color" do%><span>Delete</span>
-<i class="fa fa-trash" aria-hidden="true"></i><% end %></div></div>
+      <span>share</span>
+      <i class="fa fa-share" aria-hidden="true"></i>
+    <% end %>
+    <%= link_to edit_record_path(@record), class: "btn btn-primary btn-lg btn-color" do%>
+      <span>edit</span>
+      <i class="fa fa-pen" aria-hidden="true"></i>
+    <% end %>
+    <%= link_to record_path(@record),
+        data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},
+        class: "btn btn-primary btn-lg btn-color" do%>
+      <span>Delete</span>
+      <i class="fa fa-trash" aria-hidden="true"></i>
+      <% end %>
+  </div>
+</div>

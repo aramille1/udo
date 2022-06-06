@@ -1,13 +1,14 @@
 <h1 class="text-center m-4">Create a record</h1>
-<div class="container new_form">
+<div class="container new_form" data-controller="create_form">
+<%# <input type="file" accept="image/*;capture=camera" data-action="scroll@window->navbar#updateNavbar"> %>
 
  <input type="file" accept="image/*" capture="camera">
 <%= simple_form_for(@record) do |f| %>
-  <%= f.input :disease%>
+  <%= f.input :disease, :label => "Sickness"%>
   <%= f.input :notes %>
   <%= f.input :medication %>
   <%= f.input :date, :label => "Doctors visit date", html5: true  %>
-  <%# <%= f.input :image, as: :file, label: "Image of house" %>
+  <%= f.input :photo, as: :file, label: "Upload image"%>
 
   <%= f.simple_fields_for :symptom do |p| %>
     <%= p.input :symptoms, :as => :select, :collection => Symptom.all, as: :check_boxes  %>

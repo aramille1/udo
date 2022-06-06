@@ -51,7 +51,7 @@ class RecordsController < ApplicationController
   private
 
   def record_params
-    params.require(:record).permit(:disease, :notes, :medication, :date, :user_id )
+    params.require(:record).permit(:disease, :notes, :medication, :date, :user_id, :photo)
   end
 
 end
