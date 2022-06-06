@@ -30,6 +30,7 @@ class RecordsController < ApplicationController
 
   def show
     @record = Record.find(params[:id])
+    @record.user = current_user
   end
 
   def edit

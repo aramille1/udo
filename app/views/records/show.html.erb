@@ -18,9 +18,15 @@
 
       <div class="card-box">
         <h5 class="card-title">Symptoms</h5>
-        <% @record.symptoms.each do |item| %>
-          <div class="symptoms"><%= item.name %></div>
+
+        <% if @record.symptoms %>
+            <% @record.symptoms.each do |item| %>
+              <div class="symptoms"><%= item.name %></div>
+            <% end %>
+          <% else %>
+            <p>no symptoms yet..</p>
         <% end %>
+
       </div>
 
       <div class="card-box">

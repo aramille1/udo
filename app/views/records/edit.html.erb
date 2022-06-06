@@ -11,8 +11,7 @@
   <%= f.input :notes %>
   <%= f.input :medication %>
   <%= f.input :date, :label => "Doctors visit date" %>
-  <%# <%= f.input :image, as: :file, label: "Image of house" %>
-
+  <%= f.input :photo, as: :file, label: "Upload image"%>
   <%= f.simple_fields_for :symptom do |p| %>
     <%= p.input :symptoms, :as => :select, :collection => Symptom.all, as: :check_boxes  %>
   <% end %>
