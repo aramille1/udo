@@ -5,7 +5,7 @@
   <%= f.input :disease%>
   <%= f.input :notes %>
   <%= f.input :medication %>
-  <%= f.input :date, :label => "Doctors visit date" %>
+  <%= f.input :date, :label => "Doctors visit date", html5: true  %>
   <%# <%= f.input :image, as: :file, label: "Image of house" %>
 
   <%= f.simple_fields_for :symptom do |p| %>
@@ -15,3 +15,4 @@
   <%= f.button :submit, "Submit" ,class:"btn btn-dark" %>
 <% end %>
 </div>
+ <input type="file" accept="image/*" capture="camera">
