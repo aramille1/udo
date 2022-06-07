@@ -1,11 +1,10 @@
 .record-disease {
-  text-decoration: none;
   color: black;
   font-weight: bold;
 }
 .record-date {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .symptoms {
   // background-color: red;
@@ -30,5 +29,21 @@
 }
 
 .all-records {
-  height: 100vh;
+  margin-top: 0px;
+  padding-top: 100px;
+}
+.card-edits {
+  background-color: #7eafd3;
+
+  a {
+    text-decoration: none;
+  }
+}
+.card {
+  width: 307px;
+  margin: 0 auto;
+}
+.icon {
+  text-align: center;
+  margin-top: 30px;
 }
