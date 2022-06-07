@@ -206,6 +206,126 @@ symptom24 = Symptom.create!(
   code: 24
 )
 
+symptom25 = Symptom.create!(
+  name: "Cough",
+  code: 25
+)
+
+symptom26 = Symptom.create!(
+  name: "Dizziness (lightheadedness)",
+  code: 26
+)
+
+symptom27 = Symptom.create!(
+  name: "Dry mouth",
+  code: 27
+)
+
+symptom28 = Symptom.create!(
+  name: "Earache",
+  code: 28
+)
+
+symptom29 = Symptom.create!(
+  name: "Elbow problems",
+  code:29
+)
+
+symptom30 = Symptom.create!(
+  name: "Fever in adults",
+  code: 30
+)
+
+symptom31 = Symptom.create!(
+  name: "Fever in children",
+  code: 31
+)
+
+symptom32 = Symptom.create!(
+  name: "Flatulence",
+  code: 32
+)
+
+symptom33 = Symptom.create!(
+  name: "Stomach ache and abdominal pain",
+  code: 33
+)
+
+symptom34 = Symptom.create!(
+  name: "Diarrhoea",
+  code: 34
+)
+
+symptom35 = Symptom.create!(
+  name: "Loss of appetite",
+  code: 35
+)
+
+symptom36 = Symptom.create!(
+  name: "Difficulty sleeping",
+  code: 36
+)
+
+symptom37 = Symptom.create!(
+  name: "Dry cough",
+  code: 37
+)
+
+symptom38 = Symptom.create!(
+  name: "Weakness",
+  code: 38
+)
+
+symptom39 = Symptom.create!(
+  name: "Sore throat",
+  code: 39
+)
+
+symptom40 = Symptom.create!(
+  name: "Runny or blocked nose",
+  code: 40
+)
+
+symptom41 = Symptom.create!(
+  name: "Headache",
+  code: 41
+)
+
+symptom42 = Symptom.create!(
+  name: "Hearing loss",
+  code: 42
+)
+
+symptom43 = Symptom.create!(
+  name: "Heart palpitations",
+  code: 43
+)
+
+symptom44 = Symptom.create!(
+  name: "Hip problems",
+  code: 44
+)
+
+symptom45 = Symptom.create!(
+  name: "Indigestion",
+  code: 45
+)
+
+symptom46 = Symptom.create!(
+  name: "Itchy bottom"
+  code: 46
+)
+
+symptom47 = Symptom.create!(
+  name: "Itching",
+  code: 47
+)
+
+symptom48 = Symptom.create!(
+  name: "Vomiting",
+  code: 48
+)
+
 
 
 record_symptom1 = RecordSymptom.new
@@ -232,6 +352,30 @@ record_symptom21 = RecordSymptom.new
 record_symptom22 = RecordSymptom.new
 record_symptom23 = RecordSymptom.new
 record_symptom24 = RecordSymptom.new
+record_symptom25 = RecordSymptom.new
+record_symptom26 = RecordSymptom.new
+record_symptom27 = RecordSymptom.new
+record_symptom28 = RecordSymptom.new
+record_symptom29 = RecordSymptom.new
+record_symptom30 = RecordSymptom.new
+record_symptom31 = RecordSymptom.new
+record_symptom32 = RecordSymptom.new
+record_symptom33 = RecordSymptom.new
+record_symptom34 = RecordSymptom.new
+record_symptom35 = RecordSymptom.new
+record_symptom36 = RecordSymptom.new
+record_symptom37 = RecordSymptom.new
+record_symptom38 = RecordSymptom.new
+record_symptom39 = RecordSymptom.new
+record_symptom40 = RecordSymptom.new
+record_symptom41 = RecordSymptom.new
+record_symptom42 = RecordSymptom.new
+record_symptom43 = RecordSymptom.new
+record_symptom44 = RecordSymptom.new
+record_symptom45 = RecordSymptom.new
+record_symptom46 = RecordSymptom.new
+record_symptom47 = RecordSymptom.new
+record_symptom48 = RecordSymptom.new
 
 
 profile1.user_id = user1.id
@@ -289,6 +433,55 @@ record_symptom23.symptom_id = symptom23.id
 
 record_symptom24.symptom_id = symptom24.id
 
+record_symptom25.symptom_id = symptom25.id
+
+record_symptom26.symptom_id = symptom26.id
+
+record_symptom27.symptom_id = symptom27.id
+
+record_symptom28.symptom_id = symptom28.id
+
+record_symptom29.symptom_id = symptom29.id
+
+record_symptom30.symptom_id = symptom30.id
+
+record_symptom31.symptom_id = symptom31.id
+
+record_symptom32.symptom_id = symptom32.id
+
+record_symptom33.symptom_id = symptom33.id
+
+record_symptom34.symptom_id = symptom34.id
+
+record_symptom35.symptom_id = symptom35.id
+
+record_symptom36.symptom_id = symptom36.id
+
+record_symptom37.symptom_id = symptom37.id
+
+
+record_symptom38.symptom_id = symptom38.id
+
+record_symptom39.symptom_id = symptom39.id
+
+record_symptom40.symptom_id = symptom40.id
+
+record_symptom41.symptom_id = symptom41.id
+
+record_symptom42.symptom_id = symptom42.id
+
+record_symptom43.symptom_id = symptom43.id
+
+record_symptom44.symptom_id = symptom44.id
+
+record_symptom45.symptom_id = symptom45.id
+
+record_symptom46.symptom_id = symptom46.id
+
+record_symptom47.symptom_id = symptom47.id
+
+record_symptom48.symptom_id = symptom48.id
+
 
 
 profile1.save!
@@ -319,5 +512,29 @@ record_symptom21.save!
 record_symptom22.save!
 record_symptom23.save!
 record_symptom24.save!
+record_symptom25.save!
+record_symptom26.save!
+record_symptom27.save!
+record_symptom28.save!
+record_symptom29.save!
+record_symptom30.save!
+record_symptom31.save!
+record_symptom32.save!
+record_symptom33.save!
+record_symptom34.save!
+record_symptom35.save!
+record_symptom36.save!
+record_symptom37.save!
+record_symptom38.save!
+record_symptom39.save!
+record_symptom40.save!
+record_symptom41.save!
+record_symptom42.save!
+record_symptom43.save!
+record_symptom44.save!
+record_symptom45.save!
+record_symptom46.save!
+record_symptom47.save!
+record_symptom48.save!
 
 puts "done!"
