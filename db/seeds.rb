@@ -312,7 +312,7 @@ symptom45 = Symptom.create!(
 )
 
 symptom46 = Symptom.create!(
-  name: "Itchy bottom"
+  name: "Itchy bottom",
   code: 46
 )
 
