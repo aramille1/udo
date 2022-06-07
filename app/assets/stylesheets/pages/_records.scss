@@ -16,8 +16,10 @@
 }
 
 .btns {
-  display: flex;
-  justify-content: space-evenly;
+  margin: 0 15px;
+  .btn {
+    margin-bottom: 10px;
+  }
 }
 
 .header {
@@ -25,4 +27,8 @@
   h1 {
     padding-left: 10px;
   }
+}
+
+.all-records {
+  height: 100vh;
 }

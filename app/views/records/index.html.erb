@@ -1,13 +1,15 @@
-      <h1 class="text-center m-4">All records</h1>
-<% @records.each do |item| %>
-  <div>
-    <div class="card">
-      <div class="card-body">
-        <%= link_to record_path(item) do %>
-        <div class="record-disease"><%= item.disease %></div>
-        <div class="record-date"><%= item.date.strftime("%B %d, %Y %a") %></div>
-        <% end %>
+<h1 class="text-center m-4">All records</h1>
+<div class="all-records">
+  <% @records.each do |item| %>
+    <div>
+      <div class="card">
+        <div class="card-body">
+          <%= link_to record_path(item) do %>
+            <div class="record-disease"><%= item.disease %></div>
+            <div class="record-date"><%= item.date.strftime("%B %d, %Y %a") %></div>
+          <% end %>
+        </div>
       </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
+</div>
