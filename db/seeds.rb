@@ -207,6 +207,7 @@ symptom24 = Symptom.create!(
 )
 
 
+
 record_symptom1 = RecordSymptom.new
 record_symptom2 = RecordSymptom.new
 record_symptom3 = RecordSymptom.new
