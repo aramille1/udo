@@ -326,6 +326,96 @@ symptom48 = Symptom.create!(
   code: 48
 )
 
+symptom49 = Symptom.create!(
+  name: "Urinary incontinence",
+  code: 49
+)
+
+symptom50 = Symptom.create!(
+  name: "Knee problems",
+  code: 50
+)
+
+symptom51 = Symptom.create!(
+  name: "Migraine",
+  code: 51
+)
+
+symptom52 = Symptom.create!(
+  name: "Mouth ulcer",
+  code: 52
+)
+
+symptom53 = Symptom.create!(
+  name: "Neck problems",
+  code:53
+)
+
+symptom54 = Symptom.create!(
+  name: "Nosebleed",
+  code: 54
+)
+
+symptom55 = Symptom.create!(
+  name: "Skin rashes",
+  code: 55
+)
+
+symptom56 = Symptom.create!(
+  name: "Shortness of breath",
+  code: 56
+)
+
+symptom57 = Symptom.create!(
+  name: "Shoulder problems",
+  code: 57
+)
+
+symptom58 = Symptom.create!(
+  name: "Swollen glands",
+  code: 58
+)
+
+symptom59 = Symptom.create!(
+  name: "Toothache",
+  code: 59
+)
+
+symptom60 = Symptom.create!(
+  name: "Urinary tract infection (UTI)",
+  code: 60
+)
+
+symptom61 = Symptom.create!(
+  name: "Vertigo",
+  code: 61
+)
+
+symptom62 = Symptom.create!(
+  name: "Warts and verrucas",
+  code: 62
+)
+
+symptom63 = Symptom.create!(
+  name: "Loss of consciousness",
+  code: 63
+)
+
+symptom64 = Symptom.create!(
+  name: "Anxiety",
+  code: 64
+)
+
+symptom65 = Symptom.create!(
+  name: "Paresthesia",
+  code: 65
+)
+
+symptom66 = Symptom.create!(
+  name: "Blurred vision",
+  code: 66
+)
+
 
 
 record_symptom1 = RecordSymptom.new
@@ -376,6 +466,24 @@ record_symptom45 = RecordSymptom.new
 record_symptom46 = RecordSymptom.new
 record_symptom47 = RecordSymptom.new
 record_symptom48 = RecordSymptom.new
+record_symptom49 = RecordSymptom.new
+record_symptom50 = RecordSymptom.new
+record_symptom51 = RecordSymptom.new
+record_symptom52 = RecordSymptom.new
+record_symptom53 = RecordSymptom.new
+record_symptom53 = RecordSymptom.new
+record_symptom55 = RecordSymptom.new
+record_symptom56 = RecordSymptom.new
+record_symptom57 = RecordSymptom.new
+record_symptom58 = RecordSymptom.new
+record_symptom59 = RecordSymptom.new
+record_symptom60 = RecordSymptom.new
+record_symptom61 = RecordSymptom.new
+record_symptom62 = RecordSymptom.new
+record_symptom63 = RecordSymptom.new
+record_symptom64 = RecordSymptom.new
+record_symptom65 = RecordSymptom.new
+record_symptom66 = RecordSymptom.new
 
 
 profile1.user_id = user1.id
@@ -459,7 +567,6 @@ record_symptom36.symptom_id = symptom36.id
 
 record_symptom37.symptom_id = symptom37.id
 
-
 record_symptom38.symptom_id = symptom38.id
 
 record_symptom39.symptom_id = symptom39.id
@@ -481,6 +588,42 @@ record_symptom46.symptom_id = symptom46.id
 record_symptom47.symptom_id = symptom47.id
 
 record_symptom48.symptom_id = symptom48.id
+
+record_symptom49.symptom_id = symptom49.id
+
+record_symptom50.symptom_id = symptom50.id
+
+record_symptom51.symptom_id = symptom51.id
+
+record_symptom52.symptom_id = symptom52.id
+
+record_symptom53.symptom_id = symptom53.id
+
+record_symptom54.symptom_id = symptom54.id
+
+record_symptom55.symptom_id = symptom55.id
+
+record_symptom56.symptom_id = symptom56.id
+
+record_symptom57.symptom_id = symptom57.id
+
+record_symptom58.symptom_id = symptom58.id
+
+record_symptom59.symptom_id = symptom59.id
+
+record_symptom60.symptom_id = symptom60.id
+
+record_symptom61.symptom_id = symptom61.id
+
+record_symptom62.symptom_id = symptom62.id
+
+record_symptom63.symptom_id = symptom63.id
+
+record_symptom64.symptom_id = symptom64.id
+
+record_symptom65.symptom_id = symptom65.id
+
+record_symptom66.symptom_id = symptom66.id
 
 
 
@@ -536,5 +679,23 @@ record_symptom45.save!
 record_symptom46.save!
 record_symptom47.save!
 record_symptom48.save!
+record_symptom49.save!
+record_symptom50.save!
+record_symptom51.save!
+record_symptom52.save!
+record_symptom53.save!
+record_symptom54.save!
+record_symptom55.save!
+record_symptom56.save!
+record_symptom57.save!
+record_symptom58.save!
+record_symptom59.save!
+record_symptom60.save!
+record_symptom61.save!
+record_symptom62.save!
+record_symptom63.save!
+record_symptom64.save!
+record_symptom65.save!
+record_symptom66.save!
 
 puts "done!"
