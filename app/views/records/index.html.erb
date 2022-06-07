@@ -1,14 +1,16 @@
-<h1 class="text-center m-4">All records</h1>
-<div class= "container">
-<div class="icon">
-<svg width="120" height="120" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="33" cy="33" r="33" fill="#D9D9D9"/>
-<path d="M33 12.6545L12.6545 22.8273L33 33.0001L53.3455 22.8273L33 12.6545Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12.6545 43.1729L33 53.3456L53.3455 43.1729" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12.6545 33.0001L33 43.1729L53.3455 33.0001" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></div>
-<div class="all-records">
-  <% @records.each do |item| %>
+<div class="background">
+<br>
+  <h1 class="text-center mb-4">All records</h1>
+  <div class="icon">
+    <svg width="120" height="120" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="33" cy="33" r="33" fill="#D9D9D9"/>
+      <path d="M33 12.6545L12.6545 22.8273L33 33.0001L53.3455 22.8273L33 12.6545Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.6545 43.1729L33 53.3456L53.3455 43.1729" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.6545 33.0001L33 43.1729L53.3455 33.0001" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="all-records">
+    <% @records.each do |item| %>
       <div class="card">
         <div class="card-body card-edits">
           <%= link_to record_path(item) do %>
@@ -17,6 +19,6 @@
           <% end %>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
