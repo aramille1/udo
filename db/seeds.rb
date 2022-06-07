@@ -88,22 +88,149 @@ record3.save!
 
 symptom1 = Symptom.create!(
   name: "Dizziness",
-  code: 242
+  code: 001
 )
 
 symptom2 = Symptom.create!(
   name: "Puking",
-  code: 243
+  code: 002
 )
 
 symptom3 = Symptom.create!(
   name: "Tiredness",
-  code: 244
+  code: 003
 )
+
+symptom4 = Symptom.create!(
+  name: "Sneezing",
+  code: 004
+)
+
+symptom5 = Symptom.create!(
+  name: "Blocked nose",
+  code: 005
+)
+
+symptom6 = Symptom.create!(
+  name: "Itchy rash",
+  code: 006
+)
+
+symptom7 = Symptom.create!(
+  name: "Stiffness",
+  code: 007
+)
+
+symptom8 = Symptom.create!(
+  name: "Muscle spasms",
+  code: 008
+)
+
+symptom9 = Symptom.create!(
+  name: "Stabbing pains in your back and sometimes into one or both of your legs",
+  code: 009
+)
+
+symptom10 = Symptom.create!(
+  name: "Bowel incontinence",
+  code: 010
+)
+
+symptom11 = Symptom.create!(
+  name: "Calf problems",
+  code: 011
+)
+
+symptom12 = Symptom.create!(
+  name: "Catarrh",
+  code: 012
+)
+
+symptom13 = Symptom.create!(
+  name: "Chest pain",
+  code: 013
+)
+
+symptom14 = Symptom.create!(
+  name: "Chilblains",
+  code: 014
+)
+
+symptom15 = Symptom.create!(
+  name: "Chronic pain",
+  code: 015
+)
+
+symptom16 = Symptom.create!(
+  name: "Living well with coeliac disease",
+  code: 016
+)
+
+symptom17 = Symptom.create!(
+  name: "Constipation",
+  code: 017
+)
+
+symptom18 = Symptom.create!(
+  name: "Itchy rash",
+  code: 018
+)
+
+symptom19 = Symptom.create!(
+  name: "Stiffness",
+  code: 019
+)
+
+symptom20 = Symptom.create!(
+  name: "Muscle spasms",
+  code: 020
+)
+
+symptom21 = Symptom.create!(
+  name: "Stabbing pains in your back and sometimes into one or both of your legs",
+  code: 021
+)
+
+symptom22 = Symptom.create!(
+  name: "Bowel incontinence",
+  code: 022
+)
+
+symptom23 = Symptom.create!(
+  name: "Calf problems",
+  code: 023
+)
+
+symptom24 = Symptom.create!(
+  name: "Constipation",
+  code: 024
+)
+
 
 record_symptom1 = RecordSymptom.new
 record_symptom2 = RecordSymptom.new
 record_symptom3 = RecordSymptom.new
+record_symptom4 = RecordSymptom.new
+record_symptom5 = RecordSymptom.new
+record_symptom6 = RecordSymptom.new
+record_symptom7 = RecordSymptom.new
+record_symptom8 = RecordSymptom.new
+record_symptom9 = RecordSymptom.new
+record_symptom10 = RecordSymptom.new
+record_symptom11 = RecordSymptom.new
+record_symptom12 = RecordSymptom.new
+record_symptom13 = RecordSymptom.new
+record_symptom14 = RecordSymptom.new
+record_symptom15 = RecordSymptom.new
+record_symptom16 = RecordSymptom.new
+record_symptom17 = RecordSymptom.new
+record_symptom18 = RecordSymptom.new
+record_symptom19 = RecordSymptom.new
+record_symptom20 = RecordSymptom.new
+record_symptom21 = RecordSymptom.new
+record_symptom22 = RecordSymptom.new
+record_symptom23 = RecordSymptom.new
+record_symptom24 = RecordSymptom.new
 
 
 profile1.user_id = user1.id
@@ -119,6 +246,49 @@ record_symptom2.symptom_id = symptom2.id
 record_symptom3.record_id = record3.id
 record_symptom3.symptom_id = symptom3.id
 
+record_symptom4.symptom_id = symptom4.id
+
+record_symptom5.symptom_id = symptom5.id
+
+record_symptom6.symptom_id = symptom6.id
+
+record_symptom7.symptom_id = symptom7.id
+
+record_symptom8.symptom_id = symptom8.id
+
+record_symptom9.symptom_id = symptom9.id
+
+record_symptom10.symptom_id = symptom10.id
+
+record_symptom11.symptom_id = symptom11.id
+
+record_symptom12.symptom_id = symptom12.id
+
+record_symptom13.symptom_id = symptom13.id
+
+record_symptom14.symptom_id = symptom14.id
+
+record_symptom15.symptom_id = symptom15.id
+
+record_symptom16.symptom_id = symptom16.id
+
+record_symptom17.symptom_id = symptom17.id
+
+record_symptom18.symptom_id = symptom18.id
+
+record_symptom19.symptom_id = symptom19.id
+
+record_symptom20.symptom_id = symptom20.id
+
+record_symptom21.symptom_id = symptom21.id
+
+record_symptom22.symptom_id = symptom22.id
+
+record_symptom23.symptom_id = symptom23.id
+
+record_symptom24.symptom_id = symptom24.id
+
+
 
 profile1.save!
 profile2.save!
@@ -127,5 +297,26 @@ profile3.save!
 record_symptom1.save!
 record_symptom2.save!
 record_symptom3.save!
+record_symptom4.save!
+record_symptom5.save!
+record_symptom6.save!
+record_symptom7.save!
+record_symptom8.save!
+record_symptom9.save!
+record_symptom10.save!
+record_symptom11.save!
+record_symptom12.save!
+record_symptom13.save!
+record_symptom14.save!
+record_symptom15.save!
+record_symptom16.save!
+record_symptom17.save!
+record_symptom18.save!
+record_symptom19.save!
+record_symptom20.save!
+record_symptom21.save!
+record_symptom22.save!
+record_symptom23.save!
+record_symptom24.save!
 
 puts "done!"
