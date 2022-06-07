@@ -88,122 +88,122 @@ record3.save!
 
 symptom1 = Symptom.create!(
   name: "Dizziness",
-  code: 001
+  code: 1
 )
 
 symptom2 = Symptom.create!(
   name: "Puking",
-  code: 002
+  code: 2
 )
 
 symptom3 = Symptom.create!(
   name: "Tiredness",
-  code: 003
+  code: 3
 )
 
 symptom4 = Symptom.create!(
   name: "Sneezing",
-  code: 004
+  code: 4
 )
 
 symptom5 = Symptom.create!(
   name: "Blocked nose",
-  code: 005
+  code:5
 )
 
 symptom6 = Symptom.create!(
   name: "Itchy rash",
-  code: 006
+  code: 6
 )
 
 symptom7 = Symptom.create!(
   name: "Stiffness",
-  code: 007
+  code: 7
 )
 
 symptom8 = Symptom.create!(
   name: "Muscle spasms",
-  code: 008
+  code: 8
 )
 
 symptom9 = Symptom.create!(
   name: "Stabbing pains in your back and sometimes into one or both of your legs",
-  code: 009
+  code: 9
 )
 
 symptom10 = Symptom.create!(
   name: "Bowel incontinence",
-  code: 010
+  code: 10
 )
 
 symptom11 = Symptom.create!(
   name: "Calf problems",
-  code: 011
+  code: 11
 )
 
 symptom12 = Symptom.create!(
   name: "Catarrh",
-  code: 012
+  code: 12
 )
 
 symptom13 = Symptom.create!(
   name: "Chest pain",
-  code: 013
+  code: 13
 )
 
 symptom14 = Symptom.create!(
   name: "Chilblains",
-  code: 014
+  code: 14
 )
 
 symptom15 = Symptom.create!(
   name: "Chronic pain",
-  code: 015
+  code: 15
 )
 
 symptom16 = Symptom.create!(
   name: "Living well with coeliac disease",
-  code: 016
+  code: 16
 )
 
 symptom17 = Symptom.create!(
   name: "Constipation",
-  code: 017
+  code: 17
 )
 
 symptom18 = Symptom.create!(
   name: "Itchy rash",
-  code: 018
+  code: 18
 )
 
 symptom19 = Symptom.create!(
   name: "Stiffness",
-  code: 019
+  code: 19
 )
 
 symptom20 = Symptom.create!(
   name: "Muscle spasms",
-  code: 020
+  code: 20
 )
 
 symptom21 = Symptom.create!(
   name: "Stabbing pains in your back and sometimes into one or both of your legs",
-  code: 021
+  code: 21
 )
 
 symptom22 = Symptom.create!(
   name: "Bowel incontinence",
-  code: 022
+  code: 22
 )
 
 symptom23 = Symptom.create!(
   name: "Calf problems",
-  code: 023
+  code: 23
 )
 
 symptom24 = Symptom.create!(
   name: "Constipation",
-  code: 024
+  code: 24
 )
 
 
