@@ -1,19 +1,19 @@
 <div>
   <div class="animation-container" id="animation-container">
-    <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_xa2hm6z1.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_xa2hm6z1.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin: 0 auto;"  loop  autoplay></lottie-player>
   </div>
 <h1 class="text-center m-4"> Profile</h1>
 </div>
 
-  <div class="text-center">
-  <p><i class="fa-solid fa-cake-candles"></i></i>date of birth: <%= @profile.date_of_birth %></p>
-  <p><i class="fa-solid fa-mars-and-venus"></i>gender of birth: <%= @profile.gender %></p>
-  <p><i class="fa-solid fa-person-dots-from-line"></i>allergies: <%= @profile.allergies %></p>
-  <p><i class="fa-solid fa-pills"></i>dosage: <%= @profile.dosage %></p>
-  <p><i class="fa-solid fa-clock-rotate-left"></i>times_per_day: <%= @profile.times_per_day %></p>
-  <p><i class="fa-solid fa-syringe"></i>vaccinations: <%= @profile.vaccinations %></p>
-  <p><i class="fa-solid fa-droplet"></i>blood_type: <%= @profile.blood_type %></p>
-  <p><i class="fa-regular fa-user-group"></i>race: <%= @profile.race %></p>
+  <div class="profile-show-container">
+  <p class="profile-show-text"><i class="icon fa-solid fa-cake-candles"></i><strong>date of birth</strong>: <%= @profile.date_of_birth %></p>
+  <p class="profile-show-text"><i class="icon fa-solid fa-mars-and-venus"></i><strong>gender of birth</strong>: <%= @profile.gender %></p>
+  <p class="profile-show-text"><i class="icon fa-solid fa-person-dots-from-line"></i><strong>allergies</strong>: <%= @profile.allergies %></p>
+  <p class="profile-show-text"><i class="icon fa-solid fa-pills"></i><strong>dosage</strong>: <%= @profile.dosage %></p>
+  <p class="profile-show-text"><i class="icon fa-solid fa-clock-rotate-left"></i><strong>times_per_day</strong>: <%= @profile.times_per_day %></p>
+  <p class="profile-show-text"><i class="icon fa-solid icon fa-syringe"></i><strong>vaccinations</strong>: <%= @profile.vaccinations %></p>
+  <p class="profile-show-text"><i class="icon fa-solid fa-droplet"></i><strong>blood_type</strong>: <%= @profile.blood_type %></p>
+  <p class="profile-show-text"><i class="fa-regular fa-user-group"></i><strong>race</strong>: <%= @profile.race %></p>
   <%= link_to profiles_edit_path, class: "btn btn-primary btn-lg btn-color" do%>
   <span>edit</span>
   <i class="fa fa-pen" aria-hidden="true"></i>
