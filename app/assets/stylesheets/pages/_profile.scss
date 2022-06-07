@@ -7,4 +7,26 @@
 }
 .animation-container {
   text-align: center !important;
+  width: 100vw;
+  background-color: rgb(118, 227, 227);
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+.profile-show-text {
+  padding-bottom: 18px;
+  border-bottom: 1px solid grey;
+}
+
+.profile-show-container {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.icon {
+  margin-right: 10px !important;
+}
+
+.animation-container {
+  margin: 0 auto;
 }
