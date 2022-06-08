@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get 'profiles/edit', to: 'profiles#edit'
   get 'profile', to: 'profiles#show'
+  get '/records/:id/visitor', to: 'records#visitor'
 end
