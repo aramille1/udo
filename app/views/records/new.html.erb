@@ -7,9 +7,9 @@
   <%= f.input :medication %>
   <%= f.input :date, :label => "Doctors visit date", html5: true  %>
   <%= f.input :photo, as: :file, label: "Upload image"%>
-
+  <%= f.input :pdf, as: :file, label: "Upload document:" %>
   <%= f.simple_fields_for :symptom do |p| %>
-    <%= p.input :symptoms, :as => :select, :collection => Symptom.all, as: :check_boxes  %>
+    <%= p.input :symptoms, :as => :select, :collection => Symptom.all, input_html: { multiple: true }, prompt: 'Select symptom'  %>
   <% end %>
 
   <%= f.button :submit, "Submit" ,class:"btn btn-dark" %>
