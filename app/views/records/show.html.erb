@@ -48,6 +48,12 @@
           <p>No image yet..</p>
         <% end %>
 
+        <% if @record.pdf.attached? %>
+          <div><%=  link_to "pdf file", @record.pdf %></div>
+          <% else %>
+          <p>No files yet..</p>
+        <% end %>
+
       </div>
     </div>
   </div>
