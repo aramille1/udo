@@ -1,8 +1,24 @@
 <div class="header">
-  <%= link_to :back do%>
+    <div class="btns">
+        <%= link_to :back do%>
   <i class="fa fa-angle-left" style="color:black; padding:10px"></i>
 <% end %>
-<h1 class="text-center">Record</h1>
+<div>
+        <%= link_to edit_record_path(@record), class: "btn " do%>
+        <i class="fa fa-pen" aria-hidden="true"></i>
+      <% end %>
+      <%= link_to record_path(@record),
+          data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},
+          class: "btn" do%>
+        <i class="fa fa-trash" aria-hidden="true"></i>
+        <% end %>
+    </div>
+  </div>
+  <div>
+  <div class="animation-container ">
+    <lottie-player src="https://assets6.lottiefiles.com/temp/lf20_YMAG36.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin: 0 auto;"  loop  autoplay></lottie-player>
+  </div>
+  <h1 class="text-center mb4">Record</h1>
 <div class="wrapper" style="height: 130vh;">
   <div class="record-card" style="width: 100%;">
     <div class="card-body">
@@ -57,22 +73,7 @@
       </div>
     </div>
   </div>
-
-  <div class="btns">
-    <%= link_to '#', class: "btn btn-primary btn-lg btn-color" do%>
-      <span>share</span>
-      <i class="fa fa-share" aria-hidden="true"></i>
-    <% end %>
-    <%= link_to edit_record_path(@record), class: "btn btn-primary btn-lg btn-color" do%>
-      <span>edit</span>
-      <i class="fa fa-pen" aria-hidden="true"></i>
-    <% end %>
-    <%= link_to record_path(@record),
-        data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},
-        class: "btn btn-primary btn-lg btn-color" do%>
-      <span>Delete</span>
-      <i class="fa fa-trash" aria-hidden="true"></i>
-      <% end %>
+  <div class="btns d-flex justify-content-around">
   <%= mail_to "aramille@googmail.com", "My email",  class: "btn btn-primary btn-lg btn-color" do %>
     <span>Share</span>
     <i class="fa fa-share"></i>

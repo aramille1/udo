@@ -24,6 +24,8 @@ min-height: 95vh;
 
 .btns {
   margin: 0 15px;
+  display: flex;
+  justify-content: space-between;
   .btn {
     margin-bottom: 10px;
   }
@@ -41,7 +43,7 @@ min-height: 95vh;
   padding-top: 100px;
 }
 .card-edits {
-  background-color: #7eafd3;
+  background-color: #AB87FF;
 
   a {
     text-decoration: none;
