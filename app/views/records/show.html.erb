@@ -43,7 +43,9 @@
         <h5 class="card-title">Image</h5>
 
         <% if @record.photo.attached? %>
-          <div><%= cl_image_tag @record.photo.key, height: 300, width: 300, crop: :fill %></div>
+        <%= link_to @record.photo.url do %>
+          <%= cl_image_tag @record.photo.key, height: 200, width: 200, crop: :fill %>
+        <%end%>
           <% else %>
           <p>No image yet..</p>
         <% end %>
@@ -59,10 +61,6 @@
   </div>
 
   <div class="btns">
-    <%= link_to '#', class: "btn btn-primary btn-lg btn-color" do%>
-      <span>share</span>
-      <i class="fa fa-share" aria-hidden="true"></i>
-    <% end %>
     <%= link_to edit_record_path(@record), class: "btn btn-primary btn-lg btn-color" do%>
       <span>edit</span>
       <i class="fa fa-pen" aria-hidden="true"></i>
@@ -73,10 +71,10 @@
       <span>Delete</span>
       <i class="fa fa-trash" aria-hidden="true"></i>
       <% end %>
-  <%= mail_to "aramille@googmail.com", "My email",  class: "btn btn-primary btn-lg btn-color" do %>
-    <span>Share</span>
-    <i class="fa fa-share"></i>
-  <% end %>
+    <%= mail_to "aramille@googmail.com", subject: "here is your link", body: request.original_url,  class: "btn btn-primary btn-lg btn-color" do %>
+      <span>Share</span>
+      <i class="fa fa-share-nodes"></i>
+    <% end %>
   </div>
 
 
