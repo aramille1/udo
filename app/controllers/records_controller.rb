@@ -1,4 +1,6 @@
 class RecordsController < ApplicationController
+  skip_before_action :authenticate_user!, only: :visitor
+
   def index
     @records = Record.all
   end
@@ -48,6 +50,16 @@ class RecordsController < ApplicationController
     @record.destroy
     redirect_to records_path, status: :see_other
   end
+
+  def visitor
+    @record = Record.find(params[:id])
+    if params[:token] != @record.token
+    redirect_to root_path
+    else
+    render :show
+    end
+  end
+
 
   private
 
