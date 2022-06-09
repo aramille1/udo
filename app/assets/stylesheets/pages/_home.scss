@@ -22,6 +22,7 @@
   height: 100%;
   width: 100%;
   z-index: -1;
+  margin-bottom: 80px;
 }
 .text-landing {
   display: flex;
@@ -279,7 +280,7 @@
   }
 
   .feature-section {
-    padding: 40px 20px;
+    padding: 52px 50px;
   }
 
   .flex-container {
@@ -336,4 +337,11 @@
   flex-direction: column;
   height: 150px;
   justify-content: space-between;
+}
+
+.space-at-buttm{
+  margin-bottom: 100px;
+}
+.pic {
+  margin-bottom: 25px;
 }
