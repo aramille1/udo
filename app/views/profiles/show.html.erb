@@ -10,39 +10,40 @@
   </div>
   <h1 class="text-center mb-4">
     Profile</h1>
-  <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_zfszhesy.json" background="transparent" speed="1" style="width: 150px; height: 150px; margin: 0 auto;" loop autoplay></lottie-player>
+  <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_zfszhesy.json" background="transparent" speed="0.5" style="width: 150px; height: 150px; margin: 0 auto;" loop autoplay></lottie-player>
 </div></div>
 <div class="profile-show-container">
   <p class="profile-show-text">
     <i class="icon fa-solid fa-mars-and-venus"></i>
-    <strong>gender of birth</strong>:
+    <strong>Gender of birth</strong>:
     <%= @profile.gender %></p>
   <p class="profile-show-text">
     <i class="icon fa-solid fa-cake-candles"></i>
+    <strong>Date of birth</strong>:
       <%= @profile.date_of_birth %></p>
   <p class="profile-show-text">
     <i class="icon fa-solid fa-person-dots-from-line"></i>
-    <strong>allergies</strong>:
+    <strong>Allergies</strong>:
     <%= @profile.allergies %></p>
   <p class="profile-show-text">
     <i class="icon fa-solid fa-pills"></i>
-    <strong>dosage</strong>:
-    <%= @profile.dosage %></p>
+    <strong>Dosage</strong>:
+    <%= @profile.dosage %> ml</p>
   <p class="profile-show-text">
     <i class="icon fa-solid fa-clock-rotate-left"></i>
-    <strong>times_per_day</strong>:
+    <strong>Times per day</strong>:
     <%= @profile.times_per_day %></p>
   <p class="profile-show-text">
     <i class="icon fa-solid icon fa-syringe"></i>
-    <strong>vaccinations</strong>:
+    <strong>Vaccinations</strong>:
     <%= @profile.vaccinations %></p>
   <p class="profile-show-text">
     <i class="icon fa-solid fa-droplet"></i>
-    <strong>blood_type</strong>:
+    <strong>Blood type</strong>:
     <%= @profile.blood_type %></p>
   <p class="profile-show-text">
     <i class="icon fa fa-user-group"></i>
-    <strong>race</strong>:
+    <strong>Race</strong>:
     <%= @profile.race %></p>
   <div class="nav-item logout-btn"></div>
 
