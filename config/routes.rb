@@ -12,4 +12,7 @@ Rails.application.routes.draw do
   get 'profiles/edit', to: 'profiles#edit'
   get 'profile', to: 'profiles#show'
   get '/records/:id/visitor', to: 'records#visitor'
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
 end
