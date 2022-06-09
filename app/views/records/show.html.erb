@@ -24,19 +24,19 @@
     <lottie-player src="https://assets6.lottiefiles.com/temp/lf20_YMAG36.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px; margin: 0 auto;"  loop  autoplay></lottie-player>
 <div class="wrapper">
   <div class="record-card" style="width: 100%;">
-    <div class="card-body">
+    <div class="card-body card-body-mod">
       <div class="card-box">
-        <h5 class="card-title">Sickness</h5>
+        <h5 class="card-title record-title">Sickness</h5>
         <div><%= @record.disease %></div>
       </div>
 
       <div class="card-box">
-        <h5 class="card-title">Date</h5>
+        <h5 class="card-title record-title">Date</h5>
         <div><%= @record.date.strftime("%B %d, %Y %a") %></div>
       </div>
 
       <div class="card-box">
-        <h5 class="card-title">Symptoms</h5>
+        <h5 class="card-title record-title">Symptoms</h5>
 
         <% if @record.symptoms %>
             <% @record.symptoms.each do |item| %>
@@ -49,17 +49,17 @@
       </div>
 
       <div class="card-box">
-        <h5 class="card-title">Medication</h5>
+        <h5 class="card-title record-title">Medication</h5>
         <div><%= @record.medication %></div>
       </div>
 
       <div class="card-box">
-        <h5 class="card-title">Notes</h5>
+        <h5 class="card-title record-title">Notes</h5>
         <div><%= @record.notes %></div>
       </div>
 
       <div class="card-box">
-        <h5 class="card-title">Image</h5>
+        <h5 class="card-title record-title">Image</h5>
 
         <% if @record.photo.attached? %>
         <%= link_to @record.photo.url do %>
