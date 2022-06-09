@@ -11,8 +11,11 @@
   </head>
 
   <body>
+
+  </div>
     <%= yield %>
     <% if !current_page?(root_path) %>
+      <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_gduz3izv.json" class="animated-background" background="transparent"  speed="2"  style="position:absolute"  loop  autoplay></lottie-player>
       <%= render 'shared/navbar' %>
     <% end %>
       <%= render 'shared/flashes' %>
