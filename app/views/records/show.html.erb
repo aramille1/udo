@@ -4,7 +4,7 @@
           <i class="fa fa-angle-left" style="color:black; padding:10px"></i>
         <% end %>
         <div>
-            <%= mail_to "aramille@googlemail.com", subject: "here is your link", body: "#{request.original_url}/visitor?token=#{@record.token}",  class: "btn" do %>
+            <%= mail_to "marioleonel26@gmail.com", subject: "Requested record", body: "The content of this message is confidential. If you have received it by mistake, please inform us by an email reply and then delete the message. It is forbidden to copy, forward, or in any way reveal the contents of this message to anyone. The integrity and security of this email cannot be guaranteed over the Internet. Please click on the link to see the record: \n\n #{request.original_url}/visitor?token=#{@record.token} \n\n -Your Udo team",  class: "btn" do %>
               <i class="fa fa-share-nodes"></i>
             <% end %>
             <%= link_to edit_record_path(@record), class: "btn " do%>
