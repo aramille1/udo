@@ -12,3 +12,16 @@
 @import "pages/records";
 @import "pages/index";
 @import "pages/profile";
+
+.background {
+  background-size: cover;
+  text-align: center !important;
+  width: 100%;
+  position: relative;
+}
+
+.animated-background {
+  top: -85px;
+  left: -75px;
+  z-index: -1;
+}
