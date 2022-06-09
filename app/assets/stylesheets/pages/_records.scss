@@ -5,7 +5,7 @@
 // min-height: 95vh;
 // background: rgb(255,255,255);
 // background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(148,187,233,0) 100%);
-min-height: 100vh;
+min-height: 90vh;
 position: relative;
 }
 
@@ -22,7 +22,7 @@ position: relative;
 }
 .record-date {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .symptoms {
   // background-color: red;
@@ -33,7 +33,7 @@ position: relative;
 }
 
 .btns {
-  margin: 0 15px;
+  margin:15px;
   display: flex;
   justify-content: space-between;
   .btn {
@@ -48,20 +48,14 @@ position: relative;
   }
 }
 
-.all-records {
-  margin-top: -115px;
-  padding-top: 100px;
-}
 .card-edits {
-  background-color: #AB87FF;
-
   a {
     text-decoration: none;
   }
 }
 .card {
   width: 307px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 .icon {
   text-align: center;

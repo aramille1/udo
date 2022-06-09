@@ -8,25 +8,33 @@
 .animation-container {
   text-align: center !important;
   width: 100vw;
-     background-color: #ffffff;;
   border-bottom-left-radius: 150px;
   border-bottom-right-radius: 150px;
+  margin: 20px 0 30px 0;
 }
 
 .profile-show-text {
   padding-bottom: 18px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #80808047;
 }
 
 .profile-show-container {
   margin: 0 auto;
-  width: 65%;
+  width: 70%;
 }
 
 .icon {
   margin-right: 10px !important;
 }
 
-.animation-container {
-  margin: 0 auto;
+.edit-btn {
+  display: flex;
+  justify-content: end;
+  margin: 0 10px;
+}
+
+.logout-btn {
+  display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }

@@ -1,5 +1,5 @@
 <h1 class="text-center m-4">Create a record</h1>
-<div class="container new_form" data-controller="create_form">
+<div class="container" data-controller="create_form">
 
 <%= simple_form_for(@record) do |f| %>
   <%= f.input :disease, :label => "Sickness"%>
@@ -12,6 +12,8 @@
     <%= p.input :symptoms, :as => :select, :collection => Symptom.all, input_html: { multiple: true }, prompt: 'Select symptom'  %>
   <% end %>
 
-  <%= f.button :submit, "Submit" ,class:"btn btn-dark" %>
+  <div class="d-flex justify-content-center mb-4">
+    <%= f.button :submit, "Submit" ,class:"btn btn-dark" %>
+  </div>
 <% end %>
 </div>

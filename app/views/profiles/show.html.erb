@@ -1,24 +1,28 @@
 <div>
   <div class="animation-container" id="animation-container">
-    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_zfszhesy.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin: 0 auto;"  loop  autoplay></lottie-player>
+  <div class="edit-btn">
+    <%= link_to profiles_edit_path, class: "btn " do%>
+      <i class="fa fa-pen" aria-hidden="true"></i>
+    <% end %>
+    <%= link_to destroy_user_session_path, data: {turbo_method: :delete}, class: "btn" do %>
+      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    <% end %>
   </div>
-<h1 class="text-center m-4"> Profile</h1>
+<h1 class="text-center mb-4"> Profile</h1>
+    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_zfszhesy.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px; margin: 0 auto;"  loop  autoplay></lottie-player>
+  </div>
 </div>
 
   <div class="profile-show-container">
-  <p class="profile-show-text"><i class="icon fa-solid fa-cake-candles"></i><strong>date of birth</strong>: <%= @profile.date_of_birth %></p>
+  <p class="profile-show-text"><i class="icon fa-solid fa-cake-candles"></i><strong>date of birth</strong>: <%= @profile.date_of_birth.strftime("%B %d, %Y %a") %></p>
   <p class="profile-show-text"><i class="icon fa-solid fa-mars-and-venus"></i><strong>gender of birth</strong>: <%= @profile.gender %></p>
   <p class="profile-show-text"><i class="icon fa-solid fa-person-dots-from-line"></i><strong>allergies</strong>: <%= @profile.allergies %></p>
   <p class="profile-show-text"><i class="icon fa-solid fa-pills"></i><strong>dosage</strong>: <%= @profile.dosage %></p>
   <p class="profile-show-text"><i class="icon fa-solid fa-clock-rotate-left"></i><strong>times_per_day</strong>: <%= @profile.times_per_day %></p>
   <p class="profile-show-text"><i class="icon fa-solid icon fa-syringe"></i><strong>vaccinations</strong>: <%= @profile.vaccinations %></p>
   <p class="profile-show-text"><i class="icon fa-solid fa-droplet"></i><strong>blood_type</strong>: <%= @profile.blood_type %></p>
-  <p class="profile-show-text"><i class="fa-regular fa-user-group"></i><strong>race</strong>: <%= @profile.race %></p>
-  <%= link_to profiles_edit_path, class: "btn btn-primary btn-lg btn-color" do%>
-  <span>edit</span>
-  <i class="fa fa-pen" aria-hidden="true"></i>
-<% end %>
-          <div class="nav-item">
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "btn btn-outline-danger mt-2" %>
-          </div>
+  <p class="profile-show-text"><i class="icon fa fa-user-group"></i><strong>race</strong>: <%= @profile.race %></p>
+  <div class="nav-item logout-btn">
+
+  </div>
   </div>
