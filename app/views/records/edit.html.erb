@@ -1,4 +1,4 @@
-<div class="container new_form">
+<div class="container">
 <div class="header">
   <%= link_to :back do%>
   <i class="fa fa-angle-left" style="color:black; padding:10px"></i>
@@ -16,6 +16,8 @@
     <%= p.input :symptoms, :as => :select, :collection => Symptom.all, input_html: { multiple: true }, prompt: 'Select symptom'  %>
   <% end %>
 
-  <%= f.button :submit, "Submit" ,class:"btn btn-dark" %>
+  <div class="d-flex justify-content-center m-4">
+    <%= f.button :submit, "Submit" ,class:"btn btn-dark" %>
+  </div>
 <% end %>
 </div>
